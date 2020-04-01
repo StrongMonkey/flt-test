@@ -1,0 +1,12 @@
+name: 'Fleet test'
+description: 'Test to your bundle files'
+inputs:
+  directory-to-bundle:
+    description: 'Directory that contains bundle.yaml'
+    required: false
+    default: './'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+  - ${{ inputs.directory-to-bundle }}
