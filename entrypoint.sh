@@ -1,3 +1,3 @@
 #!/bin/sh
 
-flt test $1
+fleet test $1
